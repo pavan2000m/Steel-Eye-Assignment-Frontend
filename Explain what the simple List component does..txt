@@ -1,0 +1,6 @@
+It acutally displays a list of items which we given to it in the code with  the background colour red when we click on the item then
+the item colour will be changed into green colour.
+in this we created and used SingleListItem as an inbuld componenet.
+Here we used usestate to store the data of index.
+And we used useeffect to make the state null.
+We used handleclick to identify the item which we click in the list.

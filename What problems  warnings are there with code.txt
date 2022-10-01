@@ -1,0 +1,16 @@
+onClick={onClickHandler(index)} is the first error and the correct code is  onClick={()=>onClickHandler(index)}
+const [setSelectedIndex, selectedIndex] = useState(); this the error and the correct code is  const [selectedIndex, setSelectedIndex] = useState();
+Inside map function we should define key for each item for uniquely identifying the each item.
+key={index}
+isSelected={selectedIndex} due to this it will change the colour of all elements correct code is isSelected={selectedIndex===index}
+WrappedListComponent.propTypes = {
+  items: PropTypes.array(PropTypes.shapeOf({
+    text: PropTypes.string.isRequired,
+  })),
+};
+In the above lines there are two errors the correct code is below
+WrappedListComponent.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+    text: PropTypes.string.isRequired,index: PropTypes.number
+})),
+}; 
